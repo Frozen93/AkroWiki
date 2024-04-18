@@ -85,10 +85,20 @@ monkey_frog = Stunt(
     start_time=["2s", "1m12s"],
     end_time=["32s", "9m44s"]
 )
-stunts = [icing, pickpocket, high_bird, whip_series, star, twisted_tornado, peaceful_warrior_series, monkey_frog]
+h2h = Stunt(
+    urls=["https://www.youtube.com/watch?v=IL3scQYAo7w", "https://www.youtube.com/watch?v=IL3scQYAo7w"],
+    name="Hand to Hand",
+    level=3,
+    tags=["L-Base"],
+    start_time=["2s", "1m33s"],
+    end_time=["25s", "10h"]
+)
+stunts = [icing, pickpocket, high_bird, whip_series, star, twisted_tornado, peaceful_warrior_series, monkey_frog, h2h]
 
 
 st.title("Akrobatik Sammlung")
+with st.popover("QR Code zur Website"):
+    st.image("qr.png", width=320)
 level = st.selectbox(
     "Schwierigkeit",
     ("Alle", "Level 1", "Level 2", "Level 3"),
