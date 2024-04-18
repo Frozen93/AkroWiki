@@ -54,4 +54,3 @@ for stunt in stunts:
         displayStunt(stunt, level)
         at_least_one_shown = True
 if not at_least_one_shown: st.info("Zu deinen Filteroptionen gibt es noch kein Video")
-
