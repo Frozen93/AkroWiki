@@ -93,7 +93,16 @@ h2h = Stunt(
     start_time=["2s", "1m33s"],
     end_time=["25s", "10h"]
 )
-stunts = [icing, pickpocket, high_bird, whip_series, star, twisted_tornado, peaceful_warrior_series, monkey_frog, h2h]
+
+w2h = Stunt(
+    urls=["https://www.youtube.com/watch?v=M9FQHUK8Ibk", "https://www.youtube.com/watch?v=M9FQHUK8Ibk"],
+    name="Walk to Hands",
+    level=3,
+    tags=["S-Base"],
+    start_time=["4m46s", "1m33s"],
+    end_time=["4m56s", "10h"]
+)
+stunts = [icing, pickpocket, high_bird, whip_series, star, twisted_tornado, peaceful_warrior_series, monkey_frog, h2h, w2h]
 
 
 st.title("Akrobatik Sammlung")
